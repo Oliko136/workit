@@ -1,0 +1,20 @@
+.button--primary {
+    @extend %button;
+
+    padding: 12px 24px;
+    border: 2px solid $accent-color;
+
+    background-color: $accent-color;
+    color: $tertiary-text-color;
+}
+
+.button--secondary {
+    @extend %button;
+
+    padding: 0;
+    border: none;
+    border-bottom: 3px solid $accent-color;
+
+    background-color: transparent;
+    color: $primary-text-color;
+}

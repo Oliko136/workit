@@ -2,6 +2,14 @@
   list-style: none;
 }
 
+.button--secondary, .button--primary {
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  cursor: pointer;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -49,6 +57,21 @@ img {
   width: 376px;
   margin: 0 auto;
   padding: 0 16px;
+}
+
+.button--primary {
+  padding: 12px 24px;
+  border: 2px solid #44FFA1;
+  background-color: #44FFA1;
+  color: #24053E;
+}
+
+.button--secondary {
+  padding: 0;
+  border: none;
+  border-bottom: 3px solid #44FFA1;
+  background-color: transparent;
+  color: #FFFFFF;
 }
 
 .hero {
