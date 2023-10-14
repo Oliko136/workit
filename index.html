@@ -20,14 +20,16 @@
 </head>
 <body>
   <!-- Header -->
-  <header>
+  <header class="header">
     <div class="container">
-      <a href="/">
+      <nav class="nav">
+        <a href="/" class="logo">
         <svg width="96" height="25">
           <use href="./images/icons.svg#icon-logo-light"></use>
         </svg>
       </a>
       <button class="button--secondary">Apply for access</button>
+      </nav>
   </div>
   </header>
 
@@ -35,9 +37,9 @@
     <!-- Hero -->
   <section class="hero">
     <div class="container">
-      <h1 class="hero__title">Data tailored to your needs.</h1>
+      <h1 class="hero__title">Data <span class="hero__title--accent">tailored</span> to your needs.</h1>
       <button class="hero__btn button--primary">Learn more</button>
-      <img src="./images/hero-mobile.jpg" alt="Phone mockup" width="320">
+      <img class="hero__image" src="./images/hero-mobile.png" alt="Phone mockup" width="320">
   </div>
   </section>
 
@@ -47,24 +49,24 @@
       <h2 class="visually-hidden">Features</h2>
       <ul class="features__list">
         <li class="features__item">
-          <h3 class="features__name">Actionable insights</h3>
+          <h3 class="features__name"><span class="features__number">1</span>Actionable insights</h3>
 
-          <p class="features__description">1 Optimize your products, improve customer satisfaction and stay ahead of the competition 
+          <p class="features__description">Optimize your products, improve customer satisfaction and stay ahead of the competition 
             with our product data analytics.
           </p>
         </li>
 
         <li class="features__item">
-          <h3 class="features__name">Data-driven decisions</h3>
+          <h3 class="features__name"><span class="features__number">2</span>Data-driven decisions</h3>
 
-          <p class="features__description">2 Make data-driven decisions with our product data analytics. Our AI-generated reports help 
+          <p class="features__description">Make data-driven decisions with our product data analytics. Our AI-generated reports help 
             you unlock insights hidden in your product data.
           </p>
         </li>
         <li class="features__item">
-          <h3 class="features__name">Always affordable</h3>
+          <h3 class="features__name"><span class="features__number">3</span>Always affordable</h3>
 
-          <p class="features__description">3 Always affordable pricing that scales with your business. Get top-quality product data 
+          <p class="features__description">Always affordable pricing that scales with your business. Get top-quality product data 
             analytics services without hidden costs or unexpected fees.
           </p>
         </li>
@@ -76,14 +78,16 @@
   <section class="about">
     <div class="container">
       <h2 class="visually-hidden">About</h2>
-      <img src="./images/founder-mobile.jpg" alt="Company founder" width="281">
-      <h3 class="about__name">Be the first to test</h3>
+      <img class="about__image" src="./images/founder-mobile.jpg" alt="Company founder" width="281">
+      <div class="about__text">
+          <h3 class="about__name">Be the first to test</h3>
 
-      <p class="about__description">Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a 
-      beta tester for our app and kickstart your company. Apply for access below and I’ll be 
-      in touch to schedule a call.</p>
+          <p class="about__description">Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a 
+          beta tester for our app and kickstart your company. Apply for access below and I’ll be 
+          in touch to schedule a call.</p>
 
-      <button class="button--primary">Apply for access</button>
+          <button class="button--primary">Apply for access</button>
+      </div>
   </div>
   </section>
   
@@ -92,30 +96,30 @@
   
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <a href="/">
+    <div class="container footer__container">
+      <a href="/" class="footer__logo">
         <svg width="96" height="25">
           <use href="./images/icons.svg#icon-logo-dark"></use>
         </svg>
       </a>
 
-      <ul>
-        <li>
-          <a href="">
+      <ul class="socials">
+        <li class="socials__item">
+          <a href="" class="socials__link">
             <svg width="20" height="20">
               <use href="./images/icons.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
-        <li>
-          <a href="">
+        <li class="socials__item">
+          <a href="" class="socials__link">
             <svg width="20" height="20">
               <use href="./images/icons.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
-        <li>
-          <a href="">
+        <li class="socials__item">
+          <a href="" class="socials__link">
             <svg width="20" height="20">
               <use href="./images/icons.svg#icon-instagram"></use>
             </svg>

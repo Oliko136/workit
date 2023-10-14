@@ -1,4 +1,4 @@
-.features__list {
+.socials, .features__list {
   list-style: none;
 }
 
@@ -24,7 +24,7 @@
 }
 
 body {
-  background-color: #24053E;
+  background-color: #FFFFFF;
   color: #FFFFFF;
   font-family: Manrope, sans-serif;
   font-size: 16px;
@@ -53,7 +53,6 @@ img {
 }
 
 .container {
-  outline: 1px solid tomato;
   width: 376px;
   margin: 0 auto;
   padding: 0 16px;
@@ -74,23 +73,79 @@ img {
   color: #FFFFFF;
 }
 
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #24053E;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .hero {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 157px;
+  background-color: #24053E;
   text-align: center;
 }
 
 .hero__title {
+  margin-bottom: 40px;
   font-family: Fraunces, serif;
   font-size: 50px;
   line-height: 1;
 }
 
+.hero__title--accent {
+  text-decoration: underline;
+  text-decoration-color: #44FFA1;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+}
+
+.hero__image {
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
 .features {
+  padding-top: 155px;
+  padding-bottom: 72px;
   background-color: #FCF8FF;
   color: #584D62;
   text-align: center;
 }
 
+.features__item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-top: 70px;
+}
+
+.features__number {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid #24053E;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
 .features__name {
+  margin-bottom: 16px;
   color: #24053E;
   font-family: Fraunces, serif;
   font-size: 28px;
@@ -98,16 +153,51 @@ img {
 }
 
 .about {
-  background-color: #FFFFFF;
+  padding-top: 328px;
   text-align: center;
 }
 
+.about__image {
+  position: absolute;
+  left: 50%;
+  transform: translateY(-80%) translateX(-50%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.about__text {
+  position: relative;
+  padding: 32px 31px;
+  background-color: #24053E;
+}
+
 .about__name {
+  margin-bottom: 16px;
   font-family: Fraunces, serif;
   font-size: 32px;
   line-height: 1.5;
 }
 
+.about__description {
+  margin-bottom: 24px;
+}
+
 .footer {
-  background-color: #FFFFFF;
+  padding-top: 74px;
+  padding-bottom: 64px;
+  text-align: center;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 58px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 28px;
 }/*# sourceMappingURL=main.css.map */

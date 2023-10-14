@@ -1,11 +1,34 @@
 .about {
-    background-color: $tertiary-bg-color;
+    padding-top: 328px;
 
     text-align: center;
 }
 
+.about__image {
+   position: absolute;
+   left: 50%;
+   transform: translateY(-80%) translateX(-50%);
+
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+.about__text {
+    position: relative;
+
+    padding: 32px 31px;
+
+    background-color: $secondary-bg-color;
+}
+
 .about__name {
+    margin-bottom: 16px;
+
     font-family: $secondary-font;
     font-size: 32px;
     line-height: 1.5;
+}
+
+.about__description {
+    margin-bottom: 24px;
 }
