@@ -1,6 +1,15 @@
 .container {
-    //outline: 1px solid tomato;
+    outline: 1px solid tomato;
     width: $mobile;
     margin: 0 auto;
     padding: 0 16px;
+
+    @media screen and (min-width: $tablet) and (max-width: 1109px) {
+        width: $tablet;
+        padding: 0 39px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+    }
 }

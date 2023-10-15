@@ -39,7 +39,13 @@
     <div class="container">
       <h1 class="hero__title">Data <span class="hero__title--accent">tailored</span> to your needs.</h1>
       <button class="hero__btn button--primary">Learn more</button>
-      <img class="hero__image" src="./images/hero-mobile.png" alt="Phone mockup" width="320">
+      <picture>
+        <source media="(max-width: 767px)" srcset="./images/hero-mobile.png 1x, ./images/hero-mobile@2x.png 2x">
+        <source media="(max-width: 1199px)" srcset="./images/hero-tablet.png 1x, ./images/hero-tablet@2x.png 2x">
+        <source srcset="./images/hero-desktop.png 1x, ./images/hero-desktop@2x.png 2x">
+        <img class="hero__image" src="#" alt="Phone mockup" width="100%">
+      </picture>
+      
   </div>
   </section>
 
@@ -78,7 +84,12 @@
   <section class="about">
     <div class="container">
       <h2 class="visually-hidden">About</h2>
-      <img class="about__image" src="./images/founder-mobile.jpg" alt="Company founder" width="281">
+      <picture>
+        <source media="(max-width: 767px)" srcset="./images/founder-mobile.jpg 1x, ./images/founder-mobile@2x.jpg 2x">
+        <source srcset="./images/founder-desktop.jpg 1x, ./images/founder-desktop@2x.jpg 2x">
+        <img class="about__image" src="#" alt="Company founder" width="100%">
+      </picture>
+      
       <div class="about__text">
           <h3 class="about__name">Be the first to test</h3>
 
@@ -106,21 +117,21 @@
       <ul class="socials">
         <li class="socials__item">
           <a href="" class="socials__link">
-            <svg width="20" height="20">
+            <svg width="20" height="20" class="socials__icon">
               <use href="./images/icons.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
           <a href="" class="socials__link">
-            <svg width="20" height="20">
+            <svg width="20" height="20" class="socials__icon">
               <use href="./images/icons.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
           <a href="" class="socials__link">
-            <svg width="20" height="20">
+            <svg width="20" height="20" class="socials__icon">
               <use href="./images/icons.svg#icon-instagram"></use>
             </svg>
           </a>

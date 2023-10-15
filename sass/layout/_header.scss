@@ -3,6 +3,14 @@
     padding-bottom: 32px;
 
     background-color: $secondary-bg-color;
+
+    @media screen and (min-width: $tablet) {
+        padding-bottom: 29px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 56px;
+    }
 }
 
 .nav {

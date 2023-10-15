@@ -7,6 +7,15 @@
     background-color: $secondary-bg-color;
     
     text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 29px;
+        padding-bottom: 203px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 326px;
+    }
 }
 
 .hero__title {
@@ -15,6 +24,14 @@
     font-family: $secondary-font;
     font-size: 50px;
     line-height: 1;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 60px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 80px;
+    }
 }
 
 .hero__title--accent {
@@ -29,4 +46,16 @@
     bottom: -50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
+
+    max-width: 320px;
+
+    @media screen and (min-width: $tablet) {
+        transform: translateY(-25%) translateX(-45%);
+
+        max-width: 514px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: 767px;
+    }
 }
